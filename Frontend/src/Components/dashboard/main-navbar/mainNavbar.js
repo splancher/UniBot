@@ -14,8 +14,8 @@ const MainNavbar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                     <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/motivation">Motivations</Nav.Link>
                     <Nav.Link href="/chat">Chat</Nav.Link>
+                    <Nav.Link href="/survey">Survey</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>
