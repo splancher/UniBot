@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import './chatWindow.css';
 
 const ChatWindow = () => {
+    const initialized = useRef(false)
+
     const [messages, setMessages] = useState([
-        { text: 'Hello! How can I assist you?', sender: 'bot' },
+        { text: 'Welcome to UniBot, ask me any University related question and I will try to answer it!', sender: 'bot' },
     ]);
     const [newMessage, setNewMessage] = useState('');
 
@@ -15,9 +17,53 @@ const ChatWindow = () => {
         e.preventDefault();
         if (newMessage.trim() === '') return;
         setMessages([...messages, { text: newMessage, sender: 'user' }]);
+        //send new message to the Bot
+        window.botpressWebChat.sendPayload({ type: 'text', text: newMessage });
         setNewMessage('');
-        // Handle user input logic, e.g., send it to a chatbot API.
     };
+
+    useEffect(() => {
+        if (!initialized.current) {
+            initialized.current = true
+            const script = document.createElement('script')
+            script.src = 'https://cdn.botpress.cloud/webchat/v1/inject.js'
+            script.async = true
+            document.body.appendChild(script)
+
+            script.onload = () => {
+                window.botpressWebChat.init({
+                    botId: 'a8c05c56-6565-4601-966f-680ae905670b',
+                    hostUrl: 'https://cdn.botpress.cloud/webchat/v1',
+                    messagingUrl: 'https://messaging.botpress.cloud',
+                    clientId: 'a8c05c56-6565-4601-966f-680ae905670b',
+                    avatarUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/UniBZ-Logo.svg/1200px-UniBZ-Logo.svg.png',
+                    showBotInfoPage: true,
+                    enableConversationDelete: true,
+                    botConversationDescription: "Thesis Chatbot by Simon Plancher",
+                    useSessionStorage: true,
+                    composerPlaceholder: "Chat with UniBot",
+                    hideWidget: false,
+
+                });
+
+                window.botpressWebChat.onEvent(
+                    (event) => {
+                        if(event.type === 'MESSAGE.SENT'){
+                            //setMessages([...messages, { text: event.value.payload.text, sender: 'user' }]);
+                            console.log("Message sent to bot!");
+                        }
+                        if(event.type === 'MESSAGE.RECEIVED') {
+                            setMessages(prevMessages => [...prevMessages, { text: event.value.payload.text, sender: 'bot' }]);
+                        }
+                        console.log(event.type);
+                    },
+                    ['MESSAGE.RECEIVED','LIFECYCLE.LOADED', 'LIFECYCLE.READY', 'UI.OPENED', 'UI.CLOSED', 'UI.RESIZE', 'UI.SET-CLASS', 'CONFIG.SET', 'MESSAGE.SENT', 'MESSAGE.SELECTED', 'USER.CONNECTED']
+                )
+
+            }
+        }
+
+    }, [])
 
     return (
         <div className="ChatWindow">
@@ -37,7 +83,7 @@ const ChatWindow = () => {
                     type="text"
                     value={newMessage}
                     onChange={handleInputChange}
-                    placeholder="Type your message..."
+                    placeholder="Chat with UniBot..."
                 />
                 <button type="submit">Send</button>
             </form>
