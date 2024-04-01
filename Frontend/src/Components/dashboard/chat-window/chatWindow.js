@@ -42,7 +42,7 @@ const ChatWindow = () => {
                     botConversationDescription: "Thesis Chatbot by Simon Plancher",
                     useSessionStorage: true,
                     composerPlaceholder: "Chat with UniBot",
-                    hideWidget: false,
+                    hideWidget: true,
 
                 });
 
@@ -51,11 +51,15 @@ const ChatWindow = () => {
                         if(event.type === 'MESSAGE.SENT'){
                             //setMessages([...messages, { text: event.value.payload.text, sender: 'user' }]);
                             console.log("Message sent to bot!");
+                            //activate Typing animation here!
                         }
                         if(event.type === 'MESSAGE.RECEIVED') {
                             setMessages(prevMessages => [...prevMessages, { text: event.value.payload.text, sender: 'bot' }]);
                         }
-                        console.log(event.type);
+                        if(event.type === 'LIFECYCLE.LOADED'){
+                            //need to send an event for the webchat to emit the LIFECYCLE.READY event.
+                            window.botpressWebChat.sendEvent({ type: 'hide' });
+                        }
                     },
                     ['MESSAGE.RECEIVED','LIFECYCLE.LOADED', 'LIFECYCLE.READY', 'UI.OPENED', 'UI.CLOSED', 'UI.RESIZE', 'UI.SET-CLASS', 'CONFIG.SET', 'MESSAGE.SENT', 'MESSAGE.SELECTED', 'USER.CONNECTED']
                 )
