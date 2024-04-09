@@ -5,11 +5,14 @@ import styled from "styled-components";
 const StyledNavbar = styled(Navbar)`
   background-color: #146ae3; /* Updated background color */
 `;
+
 const MainNavbar = () => {
     return (
         <StyledNavbar variant="dark" expand="lg" sticky="top">
             <Container>
-                <Navbar.Brand href="/">UniBot</Navbar.Brand>
+                <Navbar.Brand href="/">
+                    unibzBot
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">

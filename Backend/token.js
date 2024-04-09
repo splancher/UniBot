@@ -1,3 +1,0 @@
-const TOKEN = 'VAM4TVFMU4CAL4GXTPR3XHL5G6XQ2TFL'
-
-module.exports = TOKEN;
