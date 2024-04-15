@@ -11,7 +11,7 @@ const Dashboard = () => {
                     <Col>
                         <h1>Try out unibzBot here</h1>
                         <p>
-                            unibzBot will try to answer every University related question.
+                            unibzBot will try to answer every university related question.
                             <br/>
                             It is not able to answer questions that are not UNIBZ related.
                         </p>

@@ -18,7 +18,7 @@ const MainNavbar = () => {
                 <Nav className="me-auto">
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/chat">Chat</Nav.Link>
-                    <Nav.Link href="/survey">Survey</Nav.Link>
+                    <Nav.Link href="https://forms.gle/6ypc4VK53BJRXd9s7" target="_blank">Survey</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>
