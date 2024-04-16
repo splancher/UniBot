@@ -8,27 +8,53 @@ const HomeDashboard = () => {
             <Container className="d-flex flex-column justify-content-center align-items-center min-vh-100">
                 <Row className="mb-5">
                     <Col className="text-center" md={{ span: 8, offset: 2 }}>
-                        <h1 className="mb-4 mt-5" style={{ fontFamily: 'Arial, sans-serif' }}>Welcome to unibz Bot - Simplifying Your Journey</h1>
+                        <h1 className="mb-4 mt-5" style={{ fontFamily: 'Arial, sans-serif' }}>Welcome to unibz Bot - Quickly answer your doubts</h1>
                         <p className="lead mb-4">
-                            Embark on your academic adventure with unibz Bot, an innovative thesis project meticulously crafted to assist first-year engineering students at our esteemed university. Powered by Botpress, this cutting-edge tool is your reliable companion, offering swift and accurate responses to your inquiries.
+                            unibzBot is a thesis project developed by Simon Plancher to help first year engineering
+                            students to quickly adapt to the new academic environment. First year students often might
+                            have some questions regarding the procedures or services offered in the university. unibzBot
+                            is there to help you with your university-related concerns.
+                        </p>
+                        <h4 className="mb-4 mt-3" style={{ fontFamily: 'Arial, sans-serif'}}> What queries does unibzBot answer?</h4>
+                        <p className="lead mb-4">
+                            unibzBot is primarily designed to answer questions about the procedures in the engineering faculty.
+                            For other faculties the chatbot may not answer or give potentially wrong information. The Bot was developed
+                            using Botpress Studio. It was trained using the website <a href="https://guide.unibz.it" style={{textDecoration: 'none'}}>guide.unibz.it</a>
+                            &nbsp; and a couple of selected PDF documents.
                         </p>
                         <p className="lead mb-4">
-                            Leveraging the wealth of knowledge contained within the university's comprehensive study guide, unibz Bot stands ready to provide invaluable support across a myriad of academic topics. Whether you seek guidance on course schedules, exam logistics, or other pertinent matters, unibz Bot is your go-to resource.
+                            unibzBot was trained to answer questions from the following topics:
+                            <ul style={{ display: 'inline-block' ,listStyle: 'disc', textAlign: 'left', marginTop: 10}}>
+                                <li>Accommodation</li>
+                                <li>Administrative Services</li>
+                                <li>Student Card</li>
+                                <li>Canteens</li>
+                                <li>Freshers Days</li>
+                                <li>Psychological Service</li>
+                                <li>Equal Opportunities</li>
+                                <li>Insurance</li>
+                                <li>Medical Assistance</li>
+                                <li>International degree seeking students</li>
+                                <li>pagoPA Payments</li>
+                                <li>Public Transportation</li>
+                                <li>Student Associations</li>
+                                <li>Student Discounts</li>
+                                <li>Student Representatives</li>
+                                <li>Studying without Barriers</li>
+                                <li>Alias Career</li>
+                                <li>Tuition Fees</li>
+                                <li>Language Requirements</li>
+                                <li>Exchange Programmes</li>
+                                <li>Internship procedures</li>
+                                <li>Graduation</li>
+                            </ul>
                         </p>
+                        <h4 className="mb-4 mt-3" style={{ fontFamily: 'Arial, sans-serif'}}> What languages does unibzBot speak?</h4>
                         <p className="lead mb-4">
-                            Developed by a dedicated team of passionate students, unibz Bot is tailor-made to cater to the unique needs of our university community. While its expertise lies in addressing UNIBZ-related queries, please be aware that it may not be equipped to handle inquiries unrelated to university affairs.
-                        </p>
-                        <p className="lead mb-4">
-                            Join us on this transformative journey with unibz Bot and experience firsthand the unparalleled convenience and efficiency it brings to your academic endeavors. Say goodbye to confusion and frustration – with unibz Bot, navigating your academic path has never been easier.
-                        </p>
-                        <p className="lead mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac tortor nec sapien venenatis aliquam. Morbi ullamcorper, dui nec mattis ultricies, lacus nisl fermentum justo, vitae cursus libero risus ac ante. Nulla facilisi. Sed faucibus sed urna sit amet posuere. Aliquam pretium fringilla nisi, at dignissim orci condimentum a. Nulla facilisi.
-                        </p>
-                        <p className="lead mb-4">
-                            Nulla facilisi. Duis hendrerit, nisl eget varius pellentesque, quam nisi vulputate risus, sed dignissim risus ligula nec orci. Praesent hendrerit, sem vitae eleifend condimentum, justo ipsum luctus leo, at hendrerit lorem nunc eget risus. Nulla facilisi. Duis id sem ac purus rutrum volutpat in in nisl.
-                        </p>
-                        <p className="lead mb-4">
-                            Proin ac lacus quis mi fringilla fringilla ut nec dui. In nec varius quam, sit amet laoreet libero. Aliquam auctor fringilla felis, nec efficitur velit bibendum nec. Integer auctor sem a magna malesuada, non dapibus nunc fermentum. Aenean sit amet urna justo. Nullam fermentum viverra mauris, eu bibendum justo malesuada a. Nam eget tortor at urna consectetur ultricies nec nec lorem.
+                            unibzBot was developed in English, but it can also handle most other languages. While for Italian
+                            and German specific content was provided in the knowledge base, other languages rely on the translation
+                            to the requested language. The most accurate responses will be obtained when chatting in
+                            English, German or Italian, because there are less translation errors.
                         </p>
                     </Col>
                 </Row>
