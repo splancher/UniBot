@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/.idea/.gitignore
+/src/Components/dashboard/arrow-curved.svg
+/.idea/modules.xml
+/.idea/UniBot.iml
+/.idea/vcs.xml
