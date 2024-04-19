@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/unibzBot/static/css/main.9d0b815f.css",
-    "main.js": "/unibzBot/static/js/main.aaa36274.js",
+    "main.js": "/unibzBot/static/js/main.50966aad.js",
     "static/js/453.005eafa0.chunk.js": "/unibzBot/static/js/453.005eafa0.chunk.js",
     "index.html": "/unibzBot/index.html",
     "main.9d0b815f.css.map": "/unibzBot/static/css/main.9d0b815f.css.map",
-    "main.aaa36274.js.map": "/unibzBot/static/js/main.aaa36274.js.map",
+    "main.50966aad.js.map": "/unibzBot/static/js/main.50966aad.js.map",
     "453.005eafa0.chunk.js.map": "/unibzBot/static/js/453.005eafa0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d0b815f.css",
-    "static/js/main.aaa36274.js"
+    "static/js/main.50966aad.js"
   ]
 }
