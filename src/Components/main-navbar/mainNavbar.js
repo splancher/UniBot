@@ -1,6 +1,7 @@
 import React from 'react';
 import {Navbar, Nav, Container} from 'react-bootstrap';
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 const StyledNavbar = styled(Navbar)`
   background-color: #146ae3; /* Updated background color */
@@ -16,8 +17,8 @@ const MainNavbar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/chat">Chat</Nav.Link>
+                    <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
+                    <Nav.Link as={Link} to={"/chat"}>Chat</Nav.Link>
                     <Nav.Link href="https://forms.gle/6ypc4VK53BJRXd9s7" target="_blank">Survey</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>

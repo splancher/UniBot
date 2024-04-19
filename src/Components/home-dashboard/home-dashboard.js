@@ -24,31 +24,31 @@ const HomeDashboard = () => {
                         </p>
                         <p className="lead mb-4">
                             unibzBot was trained to answer questions from the following topics:
-                            <ul style={{ display: 'inline-block' ,listStyle: 'disc', textAlign: 'left', marginTop: 10}}>
-                                <li>Accommodation</li>
-                                <li>Administrative Services</li>
-                                <li>Student Card</li>
-                                <li>Canteens</li>
-                                <li>Freshers Days</li>
-                                <li>Psychological Service</li>
-                                <li>Equal Opportunities</li>
-                                <li>Insurance</li>
-                                <li>Medical Assistance</li>
-                                <li>International degree seeking students</li>
-                                <li>pagoPA Payments</li>
-                                <li>Public Transportation</li>
-                                <li>Student Associations</li>
-                                <li>Student Discounts</li>
-                                <li>Student Representatives</li>
-                                <li>Studying without Barriers</li>
-                                <li>Alias Career</li>
-                                <li>Tuition Fees</li>
-                                <li>Language Requirements</li>
-                                <li>Exchange Programmes</li>
-                                <li>Internship procedures</li>
-                                <li>Graduation</li>
-                            </ul>
                         </p>
+                        <ul style={{ display: 'inline-block' ,listStyle: 'disc', textAlign: 'left', marginTop: 10}}>
+                            <li>Accommodation</li>
+                            <li>Administrative Services</li>
+                            <li>Student Card</li>
+                            <li>Canteens</li>
+                            <li>Freshers Days</li>
+                            <li>Psychological Service</li>
+                            <li>Equal Opportunities</li>
+                            <li>Insurance</li>
+                            <li>Medical Assistance</li>
+                            <li>International degree seeking students</li>
+                            <li>pagoPA Payments</li>
+                            <li>Public Transportation</li>
+                            <li>Student Associations</li>
+                            <li>Student Discounts</li>
+                            <li>Student Representatives</li>
+                            <li>Studying without Barriers</li>
+                            <li>Alias Career</li>
+                            <li>Tuition Fees</li>
+                            <li>Language Requirements</li>
+                            <li>Exchange Programmes</li>
+                            <li>Internship procedures</li>
+                            <li>Graduation</li>
+                        </ul>
                         <h4 className="mb-4 mt-3" style={{ fontFamily: 'Arial, sans-serif'}}> What languages does unibzBot speak?</h4>
                         <p className="lead mb-4">
                             unibzBot was developed in English, but it can also handle most other languages. While for Italian

@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import Dashboard from './Components/dashboard/dashboard';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import MainNavbar from "./Components/dashboard/main-navbar/mainNavbar";
+import {HashRouter as Router, Routes, Route} from "react-router-dom";
+import MainNavbar from "./Components/main-navbar/mainNavbar";
 import HomeDashboard from "./Components/home-dashboard/home-dashboard";
 
 const App = () => {
