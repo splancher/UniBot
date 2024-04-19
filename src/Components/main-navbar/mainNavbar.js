@@ -11,7 +11,7 @@ const MainNavbar = () => {
     return (
         <StyledNavbar variant="dark" expand="lg" sticky="top">
             <Container>
-                <Navbar.Brand href="/">
+                <Navbar.Brand>
                     unibzBot
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
