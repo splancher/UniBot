@@ -8,7 +8,7 @@ const HomeDashboard = () => {
             <Container className="d-flex flex-column justify-content-center align-items-center min-vh-100">
                 <Row className="mb-5">
                     <Col className="text-center" md={{ span: 8, offset: 2 }}>
-                        <h1 className="mb-4 mt-5" style={{ fontFamily: 'Arial, sans-serif' }}>Welcome to unibz Bot - Quickly answer your doubts</h1>
+                        <h1 className="mb-4 mt-5" style={{ fontFamily: 'Arial, sans-serif' }}>Welcome to unibzBot - Quickly answer your doubts</h1>
                         <p className="lead mb-4">
                             unibzBot is a thesis project developed by Simon Plancher to help first year engineering
                             students to quickly adapt to the new academic environment. First year students often might
